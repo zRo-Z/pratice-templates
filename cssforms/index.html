@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssForms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Poetry Workshops</h1>
+      <p>We will be conducting a number of poetry workshops and symposiums throughtout the year.</p>
+      <p>Please note that the following events are free to members:</p>
+         <ul>
+            <li>A Poetic Perspective</li>
+            <li>Walt Whitman at War</li>
+            <li>Found Poems and Outsider Poetry</li>
+         </ul>
+           <table>
+            <tr class="head">
+                <th></th>
+                <th>New York</th>
+                <th>Chicago</th>
+                <th>San Francisco</th>
+            </tr>
+            <tr>
+                <th>A Poetic Perspective</th>
+                <td>Sat 4 Feb 2012<br />11am - 2pm</td>
+                <td>Sat 3 Mar 2012<br />11am - 2pm</td>
+                <td>Sat 17 Mar 2012<br />11am - 2pm</td>
+            </tr>
+            <tr class="even">
+                <th>Walt Whitman at War</th>
+                <td>Sat 7 Apr 2012<br />11am - 1pm</td>
+                <td>Sat 5 May 2012<br />11am - 1pm</td>
+                <td>Sat 19 May 2012<br />11am - 1pm</td>
+            </tr>
+            <tr>
+                <th>Found Poems %amp: Outsider Poetry</th>
+                <td>Sat 9 Jun 2012<br />11am - 2pm</td>
+                <td>Sat 7 Jul 2012<br />11am - 2pm</td>
+                <td>Sat 21 Jul 2012<br />11am - 2pm</td>
+            </tr>
+            <tr class="even">
+                <th>Natural Death: An Exploration</th>
+                <td>Sat 4 Aug 2012<br />11am - 4pm</td>
+                <td>Sat 8 Sep 2012<br />11am - 4pm</td>
+                <td>Sat 21 Sep 2012<br />11am - 4pm</td>
+            </tr>
+           </table>
+           <form action="http://www.example.com/form.php" method="get">
+            <fieldset>
+                <legend>Register your interest</legend>
+                <p><label class="title" for="name">Your Name:</label>
+            <input type="text" name="name" id="name"><br />
+                <label class="title" for="email">Your Email:</label>
+            <input type="text" name="email" id="email"> </p>
+            <p><label for="location" class="title">Your closest center:</label>
+            <select name="location" id="location">
+                <option value="ny">New York</option>
+                <option value="il">Chicago</option>
+                <option value="ca">San Francisco</option>
+            </select></p>
+            <span class="title">Are you a member?</span>
+            <label><input type="radio" name="member" value="Yes" /></label>
+            <label><input type="radio" name="member" value="No" /></label>
+            </fieldset>
+           </form>
+</body>
+</html>
